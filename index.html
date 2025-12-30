@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahendra Travels - Reliable Travel. Professional Service.</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="logo-mask">
+            <img src="src/assets/logo/mahendra-travels-logo.png" alt="Mahendra Travels" class="preloader-logo" onerror="this.src='src/assets/logo/main-logo.png';">
+        </div>
+    </div>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <img src="src/assets/logo/main-logo.png" alt="Mahendra Travels" class="navbar-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                <span class="navbar-logo-fallback" style="display: none;">MAHENDRA TRAVELS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="src/pages/fleet/index.html">Fleet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="src/pages/services/index.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="src/pages/blog/index.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="src/pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center">
+                <!-- Text Content (Left on Desktop, Below Image on Mobile) -->
+                <div class="col-lg-6 col-12 hero-content order-lg-1 order-2">
+                    <div class="hero-text-wrapper">
+                        <h1 class="hero-heading" id="heroHeading">MAHENDRA TRAVELS</h1>
+                        <p class="hero-subline">Reliable Travel. Professional Service.</p>
+                        <div class="rotating-features">
+                            <p class="feature-text" id="rotatingFeature">City & Outstation Travel</p>
+                        </div>
+                        <div class="hero-buttons mt-4">
+                            <a href="#contact" class="btn btn-success btn-lg me-3">Book Now</a>
+                            <a href="#about" class="btn btn-outline-primary btn-lg">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Image (Right on Desktop, First on Mobile) -->
+                <div class="col-lg-6 col-12 hero-image-wrapper order-lg-2 order-1">
+                    <div class="hero-image-placeholder">
+                        <img src="src/assets/hero/hero-image.png" alt="Mahendra Travels" class="hero-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="hero-image-fallback" style="display: none;">
+                            <div class="fallback-content">
+                                <svg width="100%" height="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="400" height="300" fill="#e3f2fd"/>
+                                    <path d="M200 100 L250 200 L150 200 Z" fill="#1976d2" opacity="0.3"/>
+                                    <circle cx="200" cy="150" r="40" fill="#1976d2" opacity="0.2"/>
+                                    <text x="200" y="160" font-family="Arial" font-size="24" fill="#1976d2" text-anchor="middle" font-weight="bold">MAHENDRA</text>
+                                    <text x="200" y="185" font-family="Arial" font-size="18" fill="#1976d2" text-anchor="middle">TRAVELS</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center">
+                <!-- Left Panel: Content Card -->
+                <div class="col-lg-6 col-12 about-content-panel order-lg-1 order-2">
+                    <div class="about-card">
+                        <h2 class="about-title">ABOUT MAHENDRA TRAVELS</h2>
+                        <p class="about-tagline">Dependable Fleet. Professional Service.</p>
+                        <p class="about-body">Mahendra Travels provides reliable city, outstation, airport and corporate transport solutions with a well-maintained premium fleet and experienced chauffeurs.</p>
+                        <ul class="about-highlights">
+                            <li>Corporate Travel Specialists</li>
+                            <li>Fleet Safety & Maintenance Focused</li>
+                            <li>Comfortable & Professional Experience</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Right Panel: 3D Gallery -->
+                <div class="col-lg-6 col-12 about-carousel-panel order-lg-2 order-1">
+                    <div class="gallery-3d-container">
+                        <div class="gallery" id="gallery3D">
+                            <!-- Images will be loaded dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="fleet-header text-center mb-5">
+                        <h2 class="fleet-title">Our Premium Fleet</h2>
+                        <p class="fleet-subtitle">Choose from our range of comfortable and reliable vehicles</p>
+                    </div>
+                    <div class="fleet-grid">
+                        <div class="fleet-card" data-vehicle="innova-crysta">
+                            <div class="fleet-card-inner">
+                                <div class="fleet-card-front">
+                                    <div class="fleet-image-wrapper">
+                                        <img src="src/assets/fleet/innova-crysta.png" alt="Innova Crysta" class="fleet-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="fleet-image-placeholder" style="display: none;">
+                                            <span>Innova Crysta</span>
+                                        </div>
+                                    </div>
+                                    <div class="fleet-card-content">
+                                        <h3 class="fleet-card-title">Innova Crysta</h3>
+                                        <p class="fleet-card-description">Premium 7-seater SUV for comfortable city and outstation travel</p>
+                                        <a href="src/pages/fleet/innova-crysta.html" class="fleet-card-cta">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fleet-card" data-vehicle="urbania-9-seater">
+                            <div class="fleet-card-inner">
+                                <div class="fleet-card-front">
+                                    <div class="fleet-image-wrapper">
+                                        <img src="src/assets/fleet/urbania-9.png" alt="Urbania 9 Seater" class="fleet-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="fleet-image-placeholder" style="display: none;">
+                                            <span>Urbania 9 Seater</span>
+                                        </div>
+                                    </div>
+                                    <div class="fleet-card-content">
+                                        <h3 class="fleet-card-title">Urbania 9 Seater</h3>
+                                        <p class="fleet-card-description">Spacious 9-seater van perfect for small groups and families</p>
+                                        <a href="src/pages/fleet/urbania-9-seater.html" class="fleet-card-cta">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fleet-card" data-vehicle="21-seater-coach">
+                            <div class="fleet-card-inner">
+                                <div class="fleet-card-front">
+                                    <div class="fleet-image-wrapper">
+                                        <img src="src/assets/fleet/coach-21.png" alt="21 Seater Coach" class="fleet-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="fleet-image-placeholder" style="display: none;">
+                                            <span>21 Seater Coach</span>
+                                        </div>
+                                    </div>
+                                    <div class="fleet-card-content">
+                                        <h3 class="fleet-card-title">21 Seater Coach</h3>
+                                        <p class="fleet-card-description">Comfortable coach for medium-sized groups and corporate travel</p>
+                                        <a href="src/pages/fleet/21-seater-coach.html" class="fleet-card-cta">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <a href="src/pages/fleet/index.html" class="btn btn-success btn-lg">View Full Fleet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="services-header text-center mb-5">
+                        <h2 class="services-title">Our Services</h2>
+                        <p class="services-subtitle">Premium transportation solutions for corporate and personal travel</p>
+                    </div>
+                    <div class="services-scroll-container">
+                        <div class="services-scroll-wrapper">
+                            <div class="service-card" data-service="city-taxi-rentals">
+                                <div class="service-card-inner">
+                                    <div class="service-icon-wrapper">
+                                        <img src="src/assets/services/city-taxi.png" alt="City Taxi Rentals" class="service-icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="service-icon-placeholder" style="display: none;">
+                                            <i class="bi bi-taxi-front"></i>
+                                        </div>
+                                    </div>
+                                    <h3 class="service-card-title">City Taxi Rentals</h3>
+                                    <p class="service-card-description">Reliable local travel for business meetings, city commutes and day trips within Bangalore.</p>
+                                    <p class="service-card-tagline">Corporate staff • Business executives • Local city riders</p>
+                                    <a href="src/pages/services/city-taxi-rentals.html" class="service-card-cta">
+                                        Learn More <span class="arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="service-card" data-service="airport-transfers">
+                                <div class="service-card-inner">
+                                    <div class="service-icon-wrapper">
+                                        <img src="src/assets/services/airport.png" alt="Airport Pickup & Drop" class="service-icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="service-icon-placeholder" style="display: none;">
+                                            <i class="bi bi-airplane"></i>
+                                        </div>
+                                    </div>
+                                    <h3 class="service-card-title">Airport Pickup & Drop</h3>
+                                    <p class="service-card-description">On-time airport transfers with professional chauffeurs and well-maintained vehicles.</p>
+                                    <p class="service-card-tagline">Business travellers • Families • Corporate guests</p>
+                                    <a href="src/pages/services/airport-transfers.html" class="service-card-cta">
+                                        Learn More <span class="arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="service-card" data-service="outstation-travel">
+                                <div class="service-card-inner">
+                                    <div class="service-icon-wrapper">
+                                        <img src="src/assets/services/outstation.png" alt="Outstation Travel" class="service-icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="service-icon-placeholder" style="display: none;">
+                                            <i class="bi bi-signpost-split"></i>
+                                        </div>
+                                    </div>
+                                    <h3 class="service-card-title">Outstation Travel</h3>
+                                    <p class="service-card-description">Comfortable and dependable outstation trips for leisure tours, family travel and corporate journeys.</p>
+                                    <p class="service-card-tagline">Weekend trips • Pilgrimage • Inter-city travel groups</p>
+                                    <a href="src/pages/services/outstation-travel.html" class="service-card-cta">
+                                        Learn More <span class="arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="service-card" data-service="corporate-transport">
+                                <div class="service-card-inner">
+                                    <div class="service-icon-wrapper">
+                                        <img src="src/assets/services/corporate.png" alt="Corporate & Staff Transport" class="service-icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="service-icon-placeholder" style="display: none;">
+                                            <i class="bi bi-briefcase"></i>
+                                        </div>
+                                    </div>
+                                    <h3 class="service-card-title">Corporate & Staff Transport</h3>
+                                    <p class="service-card-description">Structured staff transportation with scheduled pick-ups, trained drivers and reliable fleet support.</p>
+                                    <p class="service-card-tagline">Companies • Corporate teams • Industrial workforce</p>
+                                    <a href="src/pages/services/corporate-transport.html" class="service-card-cta">
+                                        Learn More <span class="arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="service-card" data-service="event-transport">
+                                <div class="service-card-inner">
+                                    <div class="service-icon-wrapper">
+                                        <img src="src/assets/services/events.png" alt="Event & Group Transportation" class="service-icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="service-icon-placeholder" style="display: none;">
+                                            <i class="bi bi-people"></i>
+                                        </div>
+                                    </div>
+                                    <h3 class="service-card-title">Event & Group Transportation</h3>
+                                    <p class="service-card-description">Coordinated group transport for weddings, conferences, events and bulk passenger movement.</p>
+                                    <p class="service-card-tagline">Event organizers • Wedding guests • Large family groups</p>
+                                    <a href="src/pages/services/event-transport.html" class="service-card-cta">
+                                        Learn More <span class="arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <a href="src/pages/services/index.html" class="btn btn-lg" style="background-color: #2f7d3b; color: #ffffff; border: none; padding: 0.75rem 2rem; font-weight: 500; letter-spacing: 0.5px; border-radius: 8px;">View All Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="blog-header text-center mb-5">
+                        <h2 class="blog-title">Travel Blogs & Guides</h2>
+                        <p class="blog-subtitle">Helpful route insights, travel tips, and vehicle guides for our customers</p>
+                    </div>
+                    <div class="blog-scroll-container">
+                        <div class="blog-scroll-wrapper">
+                            <div class="blog-card">
+                                <a href="src/pages/blog/innova-to-mysore.html" class="blog-card-link">
+                                    <div class="blog-card-inner">
+                                        <div class="blog-image-wrapper">
+                                            <img src="src/assets/blogs/innova-mysore.png" alt="Innova Taxi from Bangalore to Mysore" class="blog-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                            <div class="blog-image-placeholder" style="display: none;">
+                                                <i class="bi bi-image"></i>
+                                            </div>
+                                        </div>
+                                        <div class="blog-card-content">
+                                            <h3 class="blog-card-title">Innova Taxi from Bangalore to Mysore – Route, Travel Guide & Pricing</h3>
+                                            <p class="blog-card-excerpt">A complete travel guide for booking an Innova from Bangalore to Mysore — distance, trip duration, routes, stops, and pricing details.</p>
+                                            <span class="blog-card-cta">Read Blog <span class="arrow">→</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog-card">
+                                <a href="src/pages/blog/innova-to-coorg.html" class="blog-card-link">
+                                    <div class="blog-card-inner">
+                                        <div class="blog-image-wrapper">
+                                            <img src="src/assets/blogs/innova-coorg.png" alt="Innova Taxi from Bangalore to Coorg" class="blog-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                            <div class="blog-image-placeholder" style="display: none;">
+                                                <i class="bi bi-image"></i>
+                                            </div>
+                                        </div>
+                                        <div class="blog-card-content">
+                                            <h3 class="blog-card-title">Innova Taxi from Bangalore to Coorg – Hill Station Travel Guide</h3>
+                                            <p class="blog-card-excerpt">Plan your trip from Bangalore to Coorg in an Innova — best routes, sightseeing, road conditions, travel time, and trip cost overview.</p>
+                                            <span class="blog-card-cta">Read Blog <span class="arrow">→</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <a href="src/pages/blog/index.html" class="btn btn-lg" style="background-color: #2f7d3b; color: #ffffff; border: none; padding: 0.75rem 2rem; font-weight: 500; letter-spacing: 0.5px; border-radius: 8px;">View All Blogs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-header text-center mb-5">
+                        <h2 class="contact-title">Get in Touch with Mahendra Travels</h2>
+                        <p class="contact-subtitle">We're here to help you with bookings, trip planning, and travel assistance</p>
+                    </div>
+                    <div class="contact-content-wrapper">
+                        <div class="row g-4">
+                            <!-- Left Column - Contact Information -->
+                            <div class="col-lg-6">
+                                <div class="contact-info-card">
+                                    <div class="contact-logo-wrapper">
+                                        <img src="src/assets/logo/main-logo.png" alt="Mahendra Travels" class="contact-logo" onerror="this.style.display='none';">
+                                    </div>
+                                    <h3 class="contact-info-headline">Contact Information</h3>
+                                    <div class="contact-details">
+                                        <div class="contact-detail-item">
+                                            <div class="contact-detail-label">Call / WhatsApp</div>
+                                            <div class="contact-detail-value">
+                                                <a href="tel:+919876543210" class="contact-link">+91 98765 43210</a>
+                                            </div>
+                                        </div>
+                                        <div class="contact-detail-item">
+                                            <div class="contact-detail-label">Official Email</div>
+                                            <div class="contact-detail-value">
+                                                <a href="mailto:support@mahendratravels.in" class="contact-link">support@mahendratravels.in</a>
+                                            </div>
+                                        </div>
+                                        <div class="contact-detail-item">
+                                            <div class="contact-detail-label">Office Address</div>
+                                            <div class="contact-detail-value">Mahendra Travels, 2nd Floor, Sunrise Plaza, Indiranagar, Bangalore - 560038</div>
+                                        </div>
+                                        <div class="contact-detail-item">
+                                            <div class="contact-detail-label">Location</div>
+                                            <div class="contact-detail-value">
+                                                <a href="https://maps.google.com/" target="_blank" rel="noopener noreferrer" class="contact-link">View on Google Maps</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-socials">
+                                        <div class="contact-social-item">
+                                            <a href="https://instagram.com/mahendratravels" target="_blank" rel="noopener noreferrer" class="contact-social-link">
+                                                <i class="bi bi-instagram"></i>
+                                                <span>Follow us on Instagram</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Right Column - Contact Form -->
+                            <div class="col-lg-6">
+                                <div class="contact-form-card">
+                                    <h3 class="contact-form-title">Send Us a Message</h3>
+                                    <form class="contact-form" id="contactForm">
+                                        <div class="form-group">
+                                            <label for="contactName" class="form-label">Full Name</label>
+                                            <input type="text" class="form-control" id="contactName" name="name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="contactPhone" class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" id="contactPhone" name="phone" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="contactEmail" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="contactEmail" name="email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="contactMessage" class="form-label">Message</label>
+                                            <textarea class="form-control" id="contactMessage" name="message" rows="5" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-submit">Submit Enquiry</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <a href="src/pages/contact.html" class="btn btn-lg" style="background-color: #2f7d3b; color: #ffffff; border: none; padding: 0.75rem 2rem; font-weight: 500; letter-spacing: 0.5px; border-radius: 8px;">View Contact Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="src/scripts/hero.js"></script>
+    <script src="src/scripts/scroll-colors.js"></script>
+    <script src="src/scripts/carousel.js"></script>
+    <script>
+        // Contact form handler
+        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Form submission will be handled by backend integration
+            alert('Thank you for your enquiry! We will get back to you soon.');
+        });
+    </script>
+    
+    <!-- Preloader Script -->
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const pre = document.getElementById('preloader');
+                if (pre) {
+                    pre.classList.add('fade-out');
+                    setTimeout(() => pre.remove(), 600);
+                }
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
+
